@@ -1,0 +1,2 @@
+C:\Users\Lider\Desktop\Github\College C#\CPS\obj\Debug\CPS.csproj.AssemblyReference.cache
+C:\Users\Lider\Desktop\Github\College C#\CPS\obj\Debug\CPS.csproj.CoreCompileInputs.cache
