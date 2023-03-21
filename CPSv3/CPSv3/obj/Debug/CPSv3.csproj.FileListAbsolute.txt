@@ -2,7 +2,6 @@ C:\Users\Lider\Desktop\Github\College C#\CPSv3\CPSv3\bin\Debug\CPSv3.exe.config
 C:\Users\Lider\Desktop\Github\College C#\CPSv3\CPSv3\bin\Debug\CPSv3.exe
 C:\Users\Lider\Desktop\Github\College C#\CPSv3\CPSv3\bin\Debug\CPSv3.pdb
 C:\Users\Lider\Desktop\Github\College C#\CPSv3\CPSv3\obj\Debug\CPSv3.csproj.AssemblyReference.cache
-C:\Users\Lider\Desktop\Github\College C#\CPSv3\CPSv3\obj\Debug\CPSv3.Form1.resources
 C:\Users\Lider\Desktop\Github\College C#\CPSv3\CPSv3\obj\Debug\CPSv3.Properties.Resources.resources
 C:\Users\Lider\Desktop\Github\College C#\CPSv3\CPSv3\obj\Debug\CPSv3.csproj.GenerateResource.cache
 C:\Users\Lider\Desktop\Github\College C#\CPSv3\CPSv3\obj\Debug\CPSv3.csproj.CoreCompileInputs.cache
@@ -30,5 +29,4 @@ C:\Users\Lider\Desktop\Github\College C#\CPSv3\CPSv3\bin\Debug\System.Memory.xml
 C:\Users\Lider\Desktop\Github\College C#\CPSv3\CPSv3\bin\Debug\System.Numerics.Vectors.xml
 C:\Users\Lider\Desktop\Github\College C#\CPSv3\CPSv3\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
 C:\Users\Lider\Desktop\Github\College C#\CPSv3\CPSv3\obj\Debug\CPSv3.csproj.CopyComplete
-C:\Users\Lider\Desktop\Github\College C#\CPSv3\CPSv3\obj\Debug\CPSv3.MySQLConnection.resources
 C:\Users\Lider\Desktop\Github\College C#\CPSv3\CPSv3\obj\Debug\CPSv3.databaseConnection.resources
