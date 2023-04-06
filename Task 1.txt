@@ -1,0 +1,13 @@
+Create a CLI that will allow a user to do the following
+
+Show all Diarys
+Display all diaries in diarybook
+
+Add a diary
+Add a new diary in the diarybook
+
+Search for a diary
+Search for a specific diary in the diarybook using the match filter
+
+Quit
+Quits the program
