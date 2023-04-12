@@ -37,7 +37,7 @@ namespace task_2
             {
                 //Console.WriteLine(lineRead);
                 info = lineRead.Split(',');
-                playlist.Add(info[0], System.Convert.ToString(TimeSpan.Parse(info[1]).TotalSeconds));
+                playlist.Add(info[0], Convert.ToString(TimeSpan.Parse(info[1]).TotalSeconds));
 
             }
         }
@@ -48,9 +48,9 @@ namespace task_2
             string songDurationMin = Console.ReadLine();
             Console.WriteLine("Enter the duration of the song in seconds: ");
             string songDurationSec = Console.ReadLine();
-            string totalSongDuration = String.Format("00:@1:@2",songDurationMin,songDurationSec);
+            string totalSongDuration = Convert.ToString(TimeSpan.Parse(String.Format("00:0{0}:0{1}",songDurationMin,songDurationSec)).TotalSeconds);
 
-            playlist.Add(songName, System.Convert.ToString(TimeSpan.Parse(totalSongDuration)));
+            playlist.Add(songName, totalSongDuration);
         }
         public void Remove() {
             Console.WriteLine("Enter the name of the song you would like to remove: ");
@@ -80,6 +80,16 @@ namespace task_2
         public void Count() {
             Console.WriteLine("There are {0} songs in the playlist",playlist.Count);
         }
+
+        public void Calculate()
+        {
+            float totalSeconds = 0;
+            foreach(var element in playlist.Values)
+            {
+                totalSeconds += Convert.ToInt32(element);
+            }
+            Console.WriteLine("The total seconds of the playlist are: {0}", totalSeconds);
+        }
         public void Reset() {
             Dictionary<String, String> playlist = new Dictionary<String, String>();
             Console.WriteLine("The playlist is now empty");
@@ -100,9 +110,6 @@ namespace task_2
         {
             bool exit = false;
             MP3Playlist mp3 = new MP3Playlist("C:/Users/Lider/Desktop/Github/College C#/task 2/task 2/songs.txt");
-            mp3.Count();
-
-            Console.ReadKey();
 
             while (true)
             {
@@ -146,6 +153,11 @@ namespace task_2
                     case "count":
                         {
                             mp3.Count();
+                            break;
+                        };
+                    case "calculate":
+                        {
+                            mp3.Calculate();
                             break;
                         };
                     case "reset":
