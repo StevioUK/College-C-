@@ -172,7 +172,7 @@ namespace task_2
                 }
                 if(exit)
                 {
-                    break
+                    break;
                 }
             }
         }
