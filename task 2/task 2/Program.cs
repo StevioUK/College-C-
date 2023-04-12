@@ -98,10 +98,83 @@ namespace task_2
     {
         static void Main(String[] args)
         {
+            bool exit = false;
             MP3Playlist mp3 = new MP3Playlist("C:/Users/Lider/Desktop/Github/College C#/task 2/task 2/songs.txt");
             mp3.Count();
 
             Console.ReadKey();
+
+            while (true)
+            {
+                Console.WriteLine("Avaliable Commands: Enqueue, Remove, Load, Save, Shuffle, Display, Count, Reset, Empty");
+                Console.WriteLine("Enter a command: ");
+                string command = Console.ReadLine();
+                command = command.ToLower();
+
+                switch(command)
+                {
+                    case "enqueue":
+                        {
+                            mp3.Enqueue();
+                            break;
+                        };
+                    case "remove":
+                        {
+                            mp3.Remove();
+                            break;
+                        };
+                    case "load":
+                        {
+                            mp3.Load();
+                            break;
+                        };
+                    case "save":
+                        {
+                            mp3.Save();
+                            break;
+                        };
+                    case "shuffle":
+                        {
+                            mp3.Shuffle();
+                            break;
+                        };
+                    case "display":
+                        {
+                            mp3.Display();
+                            break;
+                        };
+                    case "count":
+                        {
+                            mp3.Count();
+                            break;
+                        };
+                    case "reset":
+                        {
+                            mp3.Reset();
+                            break;
+                        };
+                    case "empty": 
+                        {
+                            mp3.Empty();
+                            break;
+                        };
+                    case "exit":
+                        {
+                            exit = true;
+                            break;
+                        };
+                    default:
+                        {
+                            Console.WriteLine("Incorrect Spelling or Wrong Command");
+                            Console.WriteLine("If you want to exit type 'exit'");
+                            break;
+                        }
+                }
+                if(exit)
+                {
+                    break
+                }
+            }
         }
     }
 }
