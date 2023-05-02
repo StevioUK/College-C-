@@ -1,0 +1,7 @@
+C:\Users\Lider\Desktop\Github\College C#\Task 3\console\Tas3 but in console\obj\Debug\Tas3 but in console.csproj.AssemblyReference.cache
+C:\Users\Lider\Desktop\Github\College C#\Task 3\console\Tas3 but in console\obj\Debug\Tas3 but in console.csproj.CoreCompileInputs.cache
+C:\Users\Lider\Desktop\Github\College C#\Task 3\console\Tas3 but in console\bin\Debug\Tas3 but in console.exe.config
+C:\Users\Lider\Desktop\Github\College C#\Task 3\console\Tas3 but in console\bin\Debug\Tas3 but in console.exe
+C:\Users\Lider\Desktop\Github\College C#\Task 3\console\Tas3 but in console\bin\Debug\Tas3 but in console.pdb
+C:\Users\Lider\Desktop\Github\College C#\Task 3\console\Tas3 but in console\obj\Debug\Tas3 but in console.exe
+C:\Users\Lider\Desktop\Github\College C#\Task 3\console\Tas3 but in console\obj\Debug\Tas3 but in console.pdb

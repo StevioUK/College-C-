@@ -60,7 +60,7 @@ namespace CPSv3
 
     public partial class Form1 : Form
     {
-        databaseConnection databaseConnection = new databaseConnection("localhost", "user", "cps2023", "cps");
+        databaseConnection databaseConnection = new databaseConnection("localhost", "user", "test123", "studentsystem");
 
         public Form1()
         {

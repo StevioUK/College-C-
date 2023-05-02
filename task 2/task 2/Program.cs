@@ -1,23 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Diagnostics;
 using System.IO;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
-/*
-Enqueue an MP3 to the playlist, Add
-Remove an MP3 from the playlist, Remove
-Load a playlist from a text file, Load
-Save a playlist on a text file, Save
-Shuffle all the songs in the playlist,
-Display all the tracks from the playlist,
-Count the number of tracks in the playlist,
-Calculate the total duration of the playlist,
-Empty/Reset the playlist,
-Check if the playlist is empty.
-*/
+
 namespace task_2
 {
 
@@ -104,7 +89,7 @@ namespace task_2
             }
         }
     }
-    class programMain
+    class Task2
     {
         static void Main(String[] args)
         {
