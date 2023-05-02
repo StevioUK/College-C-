@@ -10,27 +10,20 @@ namespace Tas3_but_in_console
     {
         public string name { get; }
         public string dob { get; }
-        public string id { get; }
 
-        public Person(string name, string dob, string id)
+        public Person(string name, string dob)
         {
             this.name = name;
             this.dob = dob;
-            this.id = id;
         }
     }
 
     class student : Person
     {
         public string course { get; set; }
-        public student(string name, string dob, string id, string course) : base(name, dob, id)
+        public student(string name, string dob, string id, string course) : base(name, dob)
         {
             this.course = course;
-        }
-
-        public void changeCourse(string newCourse)
-        {
-            this.course = newCourse;
         }
     }
 
