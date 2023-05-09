@@ -66,7 +66,7 @@ namespace studentSystem
                     studentInfo[indexer] = info[dataColumn].ToString();
                     indexer++;
                 }
-                ListItemData lid = new ListItemData(studentInfo[0], studentInfo[1], studentInfo[2]);
+                ListItemData lid = new ListItemData(studentInfo[0].ToString(), studentInfo[1], studentInfo[2], studentInfo[3]);
                 studentListItems.Add(lid);
                 string itemText = String.Format("Name: {0}, DOB: {1}, Course: {2}", lid.Name, lid.dob, lid.course);
                 studentListBox.Items.Add(itemText);
@@ -79,19 +79,19 @@ namespace studentSystem
 
         private void populateListBox()
         {
-            DataTable studentInfoQuery = executor.ExecuteQuery(String.Format("SELECT NAME, dob, course FROM students;"));
+            DataTable studentInfoQuery = executor.ExecuteQuery(String.Format("SELECT ID, NAME, dob, course FROM students;"));
             studentListBox.Items.Clear();
             studentListItems.Clear();
             foreach (DataRow info in studentInfoQuery.Rows)
             {
-                string[] studentInfo = new string[3];
+                string[] studentInfo = new string[4];
                 int indexer = 0;
                 foreach (DataColumn dataColumn in studentInfoQuery.Columns)
                 {
                     studentInfo[indexer] = info[dataColumn].ToString();
                     indexer++;
                 }
-                ListItemData lid = new ListItemData(studentInfo[0], studentInfo[1], studentInfo[2]);
+                ListItemData lid = new ListItemData(studentInfo[0].ToString(), studentInfo[1], studentInfo[2], studentInfo[3]);
                 studentListItems.Add(lid);
                 string itemText = String.Format("Name: {0}, DOB: {1}, Course: {2}", lid.Name, lid.dob, lid.course);
                 studentListBox.Items.Add(itemText);
@@ -111,18 +111,22 @@ namespace studentSystem
         {
             populateListBox();
         }
+
+        
     }
 
     public class ListItemData
     {
+        public string ID { get; set; }
         public string Name { get; set; }
         public string dob { get; set; }
         public string course { get; set; }
-        public ListItemData(string name, string dob, string course)
+        public ListItemData(string ID, string name, string dob, string course)
         {
             this.Name = name;
             this.dob = dob;
             this.course = course;
+            this.ID = ID;
         }
     }
 
