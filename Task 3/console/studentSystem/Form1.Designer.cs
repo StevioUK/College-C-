@@ -105,6 +105,7 @@ namespace studentSystem
             this.deleteStudentButton.Text = "Delete Student";
             this.deleteStudentButton.UseVisualStyleBackColor = true;
             this.deleteStudentButton.Visible = false;
+            this.deleteStudentButton.Click += new System.EventHandler(this.deleteStudentButton_Click);
             // 
             // refreshStudent
             // 

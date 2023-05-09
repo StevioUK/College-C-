@@ -112,7 +112,12 @@ namespace studentSystem
             populateListBox();
         }
 
-        
+        private void deleteStudentButton_Click(object sender, EventArgs e)
+        {
+            int selectedIndex = studentListBox.SelectedIndex;
+            ListItemData selectedItem = studentListItems[selectedIndex];
+            executor.ExecuteNonQuery(String.Format("DELETE FROM students WHERE id={0}",selectedItem.ID));
+        }
     }
 
     public class ListItemData
