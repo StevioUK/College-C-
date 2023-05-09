@@ -35,3 +35,40 @@ C:\Users\Lider\source\repos\studentSystem\obj\Debug\studentSystem.exe
 C:\Users\Lider\source\repos\studentSystem\obj\Debug\studentSystem.pdb
 C:\Users\Lider\source\repos\studentSystem\obj\Debug\studentSystem.Form1.resources
 C:\Users\Lider\source\repos\studentSystem\obj\Debug\studentSystem.Form2.resources
+C:\Users\Lider\Desktop\Github\College C#\Task 3\console\studentSystem\bin\Debug\studentSystem.exe.config
+C:\Users\Lider\Desktop\Github\College C#\Task 3\console\studentSystem\bin\Debug\studentSystem.exe
+C:\Users\Lider\Desktop\Github\College C#\Task 3\console\studentSystem\bin\Debug\studentSystem.pdb
+C:\Users\Lider\Desktop\Github\College C#\Task 3\console\studentSystem\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\Lider\Desktop\Github\College C#\Task 3\console\studentSystem\bin\Debug\Google.Protobuf.dll
+C:\Users\Lider\Desktop\Github\College C#\Task 3\console\studentSystem\bin\Debug\K4os.Compression.LZ4.dll
+C:\Users\Lider\Desktop\Github\College C#\Task 3\console\studentSystem\bin\Debug\K4os.Compression.LZ4.Streams.dll
+C:\Users\Lider\Desktop\Github\College C#\Task 3\console\studentSystem\bin\Debug\K4os.Hash.xxHash.dll
+C:\Users\Lider\Desktop\Github\College C#\Task 3\console\studentSystem\bin\Debug\MySql.Data.dll
+C:\Users\Lider\Desktop\Github\College C#\Task 3\console\studentSystem\bin\Debug\System.Buffers.dll
+C:\Users\Lider\Desktop\Github\College C#\Task 3\console\studentSystem\bin\Debug\System.IO.Pipelines.dll
+C:\Users\Lider\Desktop\Github\College C#\Task 3\console\studentSystem\bin\Debug\System.Memory.dll
+C:\Users\Lider\Desktop\Github\College C#\Task 3\console\studentSystem\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\Lider\Desktop\Github\College C#\Task 3\console\studentSystem\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\Lider\Desktop\Github\College C#\Task 3\console\studentSystem\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\Lider\Desktop\Github\College C#\Task 3\console\studentSystem\bin\Debug\BouncyCastle.Crypto.xml
+C:\Users\Lider\Desktop\Github\College C#\Task 3\console\studentSystem\bin\Debug\Google.Protobuf.pdb
+C:\Users\Lider\Desktop\Github\College C#\Task 3\console\studentSystem\bin\Debug\Google.Protobuf.xml
+C:\Users\Lider\Desktop\Github\College C#\Task 3\console\studentSystem\bin\Debug\K4os.Compression.LZ4.xml
+C:\Users\Lider\Desktop\Github\College C#\Task 3\console\studentSystem\bin\Debug\K4os.Compression.LZ4.Streams.xml
+C:\Users\Lider\Desktop\Github\College C#\Task 3\console\studentSystem\bin\Debug\K4os.Hash.xxHash.xml
+C:\Users\Lider\Desktop\Github\College C#\Task 3\console\studentSystem\bin\Debug\MySql.Data.xml
+C:\Users\Lider\Desktop\Github\College C#\Task 3\console\studentSystem\bin\Debug\System.Buffers.xml
+C:\Users\Lider\Desktop\Github\College C#\Task 3\console\studentSystem\bin\Debug\System.IO.Pipelines.xml
+C:\Users\Lider\Desktop\Github\College C#\Task 3\console\studentSystem\bin\Debug\System.Memory.xml
+C:\Users\Lider\Desktop\Github\College C#\Task 3\console\studentSystem\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\Lider\Desktop\Github\College C#\Task 3\console\studentSystem\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\Lider\Desktop\Github\College C#\Task 3\console\studentSystem\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\Lider\Desktop\Github\College C#\Task 3\console\studentSystem\obj\Debug\studentSystem.csproj.AssemblyReference.cache
+C:\Users\Lider\Desktop\Github\College C#\Task 3\console\studentSystem\obj\Debug\studentSystem.Form1.resources
+C:\Users\Lider\Desktop\Github\College C#\Task 3\console\studentSystem\obj\Debug\studentSystem.Form2.resources
+C:\Users\Lider\Desktop\Github\College C#\Task 3\console\studentSystem\obj\Debug\studentSystem.Properties.Resources.resources
+C:\Users\Lider\Desktop\Github\College C#\Task 3\console\studentSystem\obj\Debug\studentSystem.csproj.GenerateResource.cache
+C:\Users\Lider\Desktop\Github\College C#\Task 3\console\studentSystem\obj\Debug\studentSystem.csproj.CoreCompileInputs.cache
+C:\Users\Lider\Desktop\Github\College C#\Task 3\console\studentSystem\obj\Debug\studentSystem.csproj.CopyComplete
+C:\Users\Lider\Desktop\Github\College C#\Task 3\console\studentSystem\obj\Debug\studentSystem.exe
+C:\Users\Lider\Desktop\Github\College C#\Task 3\console\studentSystem\obj\Debug\studentSystem.pdb

@@ -13,15 +13,37 @@ namespace studentSystem
 {
     public partial class Form1 : Form
     {
+        static string connectionString = "server=localhost;database=studentSystem;uid=user;password=test123;";
+        MySqlExecutor executor = new MySqlExecutor(connectionString);
         public Form1()
         {
             InitializeComponent();
+            populateListBox();
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
             Form2 f2 = new Form2();
             f2.ShowDialog();
+        }
+
+        private void studentListBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+        }
+
+        private void populateListBox()
+        {
+            DataTable studentInfoQuery = executor.ExecuteQuery("SELECT NAME, dob, course FROM students;");
+            foreach (DataRow info in studentInfoQuery.Rows)
+            {
+                string studentInfo = "";
+                foreach (DataColumn dataColumn in studentInfoQuery.Columns)
+                {
+                    studentInfo += info[dataColumn];
+                    studentInfo += " ";
+                }
+                studentListBox.Items.Add(studentInfo);
+            }
         }
     }
 
