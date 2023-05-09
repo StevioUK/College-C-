@@ -27,19 +27,18 @@ namespace studentSystem
 
             if (string.IsNullOrEmpty(nameTextBox.Text) || string.IsNullOrEmpty(dobTextBox.Text) || string.IsNullOrEmpty(courseTextBox.Text))
             {
-                Form.("You cannot leave any box empty!", "Error");
+                createMessageBox message = new createMessageBox("You cannot leave any box empty!!", "Error");
             }
             else if (!isValidDate)
             {
-                createMessage("The date of birth box is not correct!", "Error");
+                createMessageBox message = new createMessageBox("The date of birth box is not correct!", "Error");
             }
             else
             {
                 student stu = new student(nameTextBox.Text, dobTextBox.Text, courseTextBox.Text);
                 string insertQuery = String.Format("INSERT INTO students (name, dob, course) VALUES ('{0}', '{1}', '{2}')", stu.name, stu.dob, stu.course);// when Idont feel like crimzon and want to slice my wrists :)
                 int affectedRows = sqlExecutor.ExecuteNonQuery(insertQuery);
-
-                createMessageBox("Successfully added a student to the database.", "Success!");
+                createMessageBox message = new createMessageBox("Successfully added a student to the database!", "Success");
                 this.Close();
             }
         }
