@@ -15,7 +15,7 @@ namespace studentSystem
     {
         static string connectionString = "server=localhost;database=studentSystem;uid=user;password=test123;";
         MySqlExecutor executor = new MySqlExecutor(connectionString);
-
+        createMessageBox messageBox = new createMessageBox();
         private List<ListItemData> studentListItems = new List<ListItemData>();
 
         public Form1()
@@ -117,12 +117,12 @@ namespace studentSystem
             int selectedIndex = studentListBox.SelectedIndex;
             ListItemData selectedItem = studentListItems[selectedIndex];
             executor.ExecuteNonQuery(String.Format("DELETE FROM students WHERE id={0}", selectedItem.ID));
-            createMessageBox message = new createMessageBox("Successfully deleted", "Success");
+            messageBox.messageBox("Successfully deleted", "Success");
         }
     }
 
     public class createMessageBox {
-        public createMessageBox(string message, string caption)
+        public void messageBox(string message, string caption)
         {
             MessageBoxButtons buttons = MessageBoxButtons.OK;
             MessageBoxIcon icon = MessageBoxIcon.Information;
