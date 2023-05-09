@@ -29,10 +29,11 @@ namespace studentSystem
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if (string.IsNullOrEmpty(nameTextBox.ToString()) || string.IsNullOrEmpty(dobTextBox.ToString()) || string.IsNullOrEmpty(courseTextBox.ToString())) //Error handling
+            if (string.IsNullOrEmpty(nameTextBox.Text) || string.IsNullOrEmpty(dobTextBox.Text) || string.IsNullOrEmpty(courseTextBox.Text))
             {
-                createMessageBox("You cannot leave the any box empty!", "Error");
-            }else
+                createMessageBox("You cannot leave any box empty!", "Error");
+            }
+            else
             {
                 student stu = new student(nameTextBox.Text, dobTextBox.Text, courseTextBox.Text);
                 string insertQuery = String.Format("INSERT INTO students (name, dob, course) VALUES ('{0}', '{1}', '{2}')", stu.name, stu.dob, stu.course);// when Idont feel like crimzon and want to slice my wrists :)
