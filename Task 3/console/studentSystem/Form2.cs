@@ -5,6 +5,7 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -29,9 +30,16 @@ namespace studentSystem
 
         private void button1_Click(object sender, EventArgs e)
         {
+
+            bool isValidDate = Regex.IsMatch(dobTextBox.Text, @"^\d{2}/\d{2}/\d{4}$");
+
             if (string.IsNullOrEmpty(nameTextBox.Text) || string.IsNullOrEmpty(dobTextBox.Text) || string.IsNullOrEmpty(courseTextBox.Text))
             {
                 createMessageBox("You cannot leave any box empty!", "Error");
+            }
+            else if (!isValidDate)
+            {
+                createMessageBox("The date of birth box is not correct!", "Error");
             }
             else
             {
