@@ -116,10 +116,20 @@ namespace studentSystem
         {
             int selectedIndex = studentListBox.SelectedIndex;
             ListItemData selectedItem = studentListItems[selectedIndex];
-            executor.ExecuteNonQuery(String.Format("DELETE FROM students WHERE id={0}",selectedItem.ID));
+            executor.ExecuteNonQuery(String.Format("DELETE FROM students WHERE id={0}", selectedItem.ID));
+            createMessageBox message = new createMessageBox("Successfully deleted", "Success");
         }
     }
 
+    public class createMessageBox {
+        public createMessageBox(string message, string caption)
+        {
+            MessageBoxButtons buttons = MessageBoxButtons.OK;
+            MessageBoxIcon icon = MessageBoxIcon.Information;
+
+            MessageBox.Show(message, caption, buttons, icon);
+        }
+    }
     public class ListItemData
     {
         public string ID { get; set; }

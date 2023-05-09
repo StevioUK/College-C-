@@ -20,14 +20,6 @@ namespace studentSystem
             InitializeComponent();
         }
 
-        private void createMessageBox(string message, string caption)
-        {
-            MessageBoxButtons buttons = MessageBoxButtons.OK;
-            MessageBoxIcon icon = MessageBoxIcon.Information;
-
-            MessageBox.Show(message, caption, buttons, icon);
-        }
-
         private void button1_Click(object sender, EventArgs e)
         {
 
@@ -35,11 +27,11 @@ namespace studentSystem
 
             if (string.IsNullOrEmpty(nameTextBox.Text) || string.IsNullOrEmpty(dobTextBox.Text) || string.IsNullOrEmpty(courseTextBox.Text))
             {
-                createMessageBox("You cannot leave any box empty!", "Error");
+                Form.("You cannot leave any box empty!", "Error");
             }
             else if (!isValidDate)
             {
-                createMessageBox("The date of birth box is not correct!", "Error");
+                createMessage("The date of birth box is not correct!", "Error");
             }
             else
             {
