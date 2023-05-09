@@ -19,25 +19,40 @@ namespace studentSystem
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void createMessageBox(string message, string caption)
         {
-            if()
-
-            student stu = new student(nameTextBox.Text, dobTextBox.Text, courseTextBox.Text);
-            string insertQuery = String.Format("INSERT INTO students (name, dob, course) VALUES ('{0}', '{1}', '{2}')", stu.name, stu.dob, stu.course);// when Idont feel like crimzon and want to slice my wrists :)
-            int affectedRows = sqlExecutor.ExecuteNonQuery(insertQuery);
-
-
-            string message = "Successfully added a student to the database.";
-            string caption = "Success!";
             MessageBoxButtons buttons = MessageBoxButtons.OK;
             MessageBoxIcon icon = MessageBoxIcon.Information;
 
             MessageBox.Show(message, caption, buttons, icon);
-            this.Close();
         }
 
-        private void textBox1_TextChanged(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e)
+        {
+            if (string.IsNullOrEmpty(nameTextBox.ToString()) || string.IsNullOrEmpty(dobTextBox.ToString()) || string.IsNullOrEmpty(courseTextBox.ToString())) //Error handling
+            {
+                createMessageBox("You cannot leave the any box empty!", "Error");
+            }else
+            {
+                student stu = new student(nameTextBox.Text, dobTextBox.Text, courseTextBox.Text);
+                string insertQuery = String.Format("INSERT INTO students (name, dob, course) VALUES ('{0}', '{1}', '{2}')", stu.name, stu.dob, stu.course);// when Idont feel like crimzon and want to slice my wrists :)
+                int affectedRows = sqlExecutor.ExecuteNonQuery(insertQuery);
+
+                createMessageBox("Successfully added a student to the database.", "Success!");
+                this.Close();
+            }
+        }
+
+        private void nameTextBox_TextChanged(object sender, EventArgs e)
+        {
+        }
+
+        private void dobTextBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void courseTextBox_TextChanged(object sender, EventArgs e)
         {
 
         }

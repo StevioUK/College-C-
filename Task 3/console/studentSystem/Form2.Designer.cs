@@ -54,7 +54,7 @@ namespace studentSystem
             this.nameTextBox.Name = "nameTextBox";
             this.nameTextBox.Size = new System.Drawing.Size(283, 20);
             this.nameTextBox.TabIndex = 1;
-            this.nameTextBox.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            this.nameTextBox.TextChanged += new System.EventHandler(this.nameTextBox_TextChanged);
             // 
             // label1
             // 
@@ -82,6 +82,7 @@ namespace studentSystem
             this.dobTextBox.Name = "dobTextBox";
             this.dobTextBox.Size = new System.Drawing.Size(283, 20);
             this.dobTextBox.TabIndex = 4;
+            this.dobTextBox.TextChanged += new System.EventHandler(this.dobTextBox_TextChanged);
             // 
             // courseTextBox
             // 
@@ -89,6 +90,7 @@ namespace studentSystem
             this.courseTextBox.Name = "courseTextBox";
             this.courseTextBox.Size = new System.Drawing.Size(283, 20);
             this.courseTextBox.TabIndex = 5;
+            this.courseTextBox.TextChanged += new System.EventHandler(this.courseTextBox_TextChanged);
             // 
             // label3
             // 
