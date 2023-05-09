@@ -21,8 +21,9 @@ namespace studentSystem
 
         private void button1_Click(object sender, EventArgs e)
         {
+            if()
 
-            student stu = new student(textBox1.Text, textBox2.Text, textBox3.Text);
+            student stu = new student(nameTextBox.Text, dobTextBox.Text, courseTextBox.Text);
             string insertQuery = String.Format("INSERT INTO students (name, dob, course) VALUES ('{0}', '{1}', '{2}')", stu.name, stu.dob, stu.course);// when Idont feel like crimzon and want to slice my wrists :)
             int affectedRows = sqlExecutor.ExecuteNonQuery(insertQuery);
 
