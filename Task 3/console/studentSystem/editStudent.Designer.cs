@@ -50,7 +50,7 @@ namespace studentSystem
             this.nameBox.Name = "nameBox";
             this.nameBox.Size = new System.Drawing.Size(219, 20);
             this.nameBox.TabIndex = 1;
-            this.nameBox.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            this.nameBox.TextChanged += new System.EventHandler(this.nameBox_TextChanged);
             // 
             // dobBox
             // 

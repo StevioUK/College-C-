@@ -17,9 +17,9 @@ namespace studentSystem
         MySqlExecutor executor = new MySqlExecutor(connectionString);
         public editStudent(string id)
         {
-            setup();
             InitializeComponent();
             this.id = id;
+            setup(id);
         }
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
@@ -27,19 +27,20 @@ namespace studentSystem
 
         }
 
-        private void textBox1_TextChanged(object sender, EventArgs e)
+        private void nameBox_TextChanged(object sender, EventArgs e)
         {
 
         }
 
-        private void setup()
+        private void setup(string id)
         {
             string command = String.Format("SELECT name FROM students WHERE id = '{0}';", id);
             object result = executor.ExecuteQuery(command);
             if (result != null)
             {
-                nameBox.Text = result.ToString();
+                dobBox.Text = result.ToString();
             }
         }
     }
+
 }
