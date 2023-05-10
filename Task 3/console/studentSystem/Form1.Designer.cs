@@ -95,6 +95,7 @@ namespace studentSystem
             this.editStudentButton.Text = "Edit Student";
             this.editStudentButton.UseVisualStyleBackColor = true;
             this.editStudentButton.Visible = false;
+            this.editStudentButton.Click += new System.EventHandler(this.editStudentButton_Click);
             // 
             // deleteStudentButton
             // 

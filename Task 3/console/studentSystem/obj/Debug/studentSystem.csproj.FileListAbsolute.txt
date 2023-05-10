@@ -72,3 +72,4 @@ C:\Users\Lider\Desktop\Github\College C#\Task 3\console\studentSystem\obj\Debug\
 C:\Users\Lider\Desktop\Github\College C#\Task 3\console\studentSystem\obj\Debug\studentSystem.csproj.CopyComplete
 C:\Users\Lider\Desktop\Github\College C#\Task 3\console\studentSystem\obj\Debug\studentSystem.exe
 C:\Users\Lider\Desktop\Github\College C#\Task 3\console\studentSystem\obj\Debug\studentSystem.pdb
+C:\Users\Lider\Desktop\Github\College C#\Task 3\console\studentSystem\obj\Debug\studentSystem.editStudent.resources

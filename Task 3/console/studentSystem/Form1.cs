@@ -119,6 +119,14 @@ namespace studentSystem
             executor.ExecuteNonQuery(String.Format("DELETE FROM students WHERE id={0}", selectedItem.ID));
             messageBox.messageBox("Successfully deleted", "Success");
         }
+
+        private void editStudentButton_Click(object sender, EventArgs e)
+        {
+            int selectedIndex = studentListBox.SelectedIndex;
+            ListItemData selectedItem = studentListItems[selectedIndex];
+            editStudent editStu = new editStudent(selectedItem.ID);
+            editStu.Show();
+        }
     }
 
     public class createMessageBox {
