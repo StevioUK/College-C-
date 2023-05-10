@@ -5,3 +5,10 @@ C:\Users\Lider\source\repos\task1\bin\Debug\task1.exe
 C:\Users\Lider\source\repos\task1\bin\Debug\task1.pdb
 C:\Users\Lider\source\repos\task1\obj\Debug\task1.exe
 C:\Users\Lider\source\repos\task1\obj\Debug\task1.pdb
+C:\Users\Lider\Desktop\Github\College C#\task1\bin\Debug\task1.exe.config
+C:\Users\Lider\Desktop\Github\College C#\task1\bin\Debug\task1.exe
+C:\Users\Lider\Desktop\Github\College C#\task1\bin\Debug\task1.pdb
+C:\Users\Lider\Desktop\Github\College C#\task1\obj\Debug\task1.csproj.AssemblyReference.cache
+C:\Users\Lider\Desktop\Github\College C#\task1\obj\Debug\task1.csproj.CoreCompileInputs.cache
+C:\Users\Lider\Desktop\Github\College C#\task1\obj\Debug\task1.exe
+C:\Users\Lider\Desktop\Github\College C#\task1\obj\Debug\task1.pdb
