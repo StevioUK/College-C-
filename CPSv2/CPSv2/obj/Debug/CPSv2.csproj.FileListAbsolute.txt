@@ -1,7 +1,0 @@
-C:\Users\Lider\Desktop\Github\College C#\CPSv2\CPSv2\bin\Debug\CPSv2.exe.config
-C:\Users\Lider\Desktop\Github\College C#\CPSv2\CPSv2\bin\Debug\CPSv2.exe
-C:\Users\Lider\Desktop\Github\College C#\CPSv2\CPSv2\bin\Debug\CPSv2.pdb
-C:\Users\Lider\Desktop\Github\College C#\CPSv2\CPSv2\obj\Debug\CPSv2.csproj.AssemblyReference.cache
-C:\Users\Lider\Desktop\Github\College C#\CPSv2\CPSv2\obj\Debug\CPSv2.csproj.CoreCompileInputs.cache
-C:\Users\Lider\Desktop\Github\College C#\CPSv2\CPSv2\obj\Debug\CPSv2.exe
-C:\Users\Lider\Desktop\Github\College C#\CPSv2\CPSv2\obj\Debug\CPSv2.pdb
