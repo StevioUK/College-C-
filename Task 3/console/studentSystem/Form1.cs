@@ -58,28 +58,26 @@ namespace studentSystem
             DataTable studentInfoQuery = executor.ExecuteQuery(String.Format("SELECT NAME, dob, course FROM students WHERE name LIKE '{0}' OR dob LIKE '{0}' OR course LIKE '{0}';", studentNameTextBox.Text));
             studentListBox.Items.Clear();
             studentListItems.Clear();
-            foreach (DataRow info in studentInfoQuery.Rows)
+            if (studentInfoQuery.Rows.Count == 0)
             {
-                string[] studentInfo = new string[4];
-                int indexer = 0;
-                foreach (DataColumn dataColumn in studentInfoQuery.Columns)
+                studentListBox.Items.Add("No Value Found");
+            } else { 
+                foreach (DataRow info in studentInfoQuery.Rows)
                 {
-                    studentInfo[indexer] = info[dataColumn].ToString();
-                    indexer++;
-                }
-                if (studentListBox.Items.Count == 0) //When I remove characters this seems to be out of loop
-                {
-                    studentListBox.Items.Add("No Value Found");
-                }
-                else
-                {
+                    string[] studentInfo = new string[4];
+                    int indexer = 0;
+                    foreach (DataColumn dataColumn in studentInfoQuery.Columns)
+                    {
+                    
+                        studentInfo[indexer] = info[dataColumn].ToString();
+                        indexer++;
+                    }
                     ListItemData lid = new ListItemData(studentInfo[0].ToString(), studentInfo[1], studentInfo[2], studentInfo[3]);
                     studentListItems.Add(lid);
                     string itemText = String.Format("Name: {0}, DOB: {1}, Course: {2}", lid.Name, lid.dob, lid.course);
                     studentListBox.Items.Add(itemText);
                 }
             }
-
         }
 
         // This method populates the ListBox with student information
@@ -157,16 +155,17 @@ namespace studentSystem
         }
 
         // This class provides a method for displaying a message box
-        public class createMessageBox
+    }
+    public class createMessageBox
+    {
+        public void messageBox(string message, string caption)
         {
-            public void messageBox(string message, string caption)
-            {
-                MessageBoxButtons buttons = MessageBoxButtons.OK;
-                MessageBoxIcon icon = MessageBoxIcon.Information;
+            MessageBoxButtons buttons = MessageBoxButtons.OK;
+            MessageBoxIcon icon = MessageBoxIcon.Information;
 
-                MessageBox.Show(message, caption, buttons, icon);
-            }
+            MessageBox.Show(message, caption, buttons, icon);
         }
+    }
 
     // This class represents the data for a single item in the ListBox
     public class ListItemData

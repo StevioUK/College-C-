@@ -37,16 +37,13 @@ namespace studentSystem
         private void setup(string id)
         {
             // List of courses to populate the coursePick ComboBox
-            List<string> courseList = new List<string>(new string[] { /* List of course names */ });
-
-            // Set the DataSource of the coursePick ComboBox to the courseList
+            List<string> courseList = new List<string>(new string[] { "Marketing", "Creative", "Occupational", "Science", "Youth", "Engineering", "Electrical", "Technology", "and", "Design", "Communication", "Classics", "of", "Environmental", "Management", "Biological", "Media", "Sciences", "Criminology", "Physiotherapy", "Social", "History", "Forestry", "Law", "Mathematics", "Architecture", "Food", "Computer", "Psychology", "Medicine", "Accounting", "Geography", "Robotics", "Agriculture", "Medical", "Materials", "Building", "Forensic", "Nursing", "Manufacturing", "Education", "Studies", "Therapy", "Philosophy", "Art", "Work", "Physiology", "Health", "Recreation", "General", "Pharmacology", "Chemistry", "Care", "Finance", "Pharmacy", "Hospitality", "Archaeology", "Drama", "Anatomy", "English", "Land", "Veterinary", "Property", "Politics", "Linguistics", "Film", "Making", "Economics", "Electronic", "Policy", "Aeronautical", "Writing", "Chemical", "Civil", "Leisure", "Counselling", "Anthropology", "Information", "Geology", "Mechanical", "Sociology", "Ancient", "Complementary", "Tourism", "Astronomy", "Business", "Cinematics", "Physics", "Dance", "Music", "Dentistry", "Sports", "Fashion" });
             coursePick.DataSource = courseList;
 
             // Retrieve the name, date of birth, and course of the student with the given ID from the database
             DataTable nameBoxResult = executor.ExecuteQuery(String.Format("SELECT name FROM students WHERE id = '{0}'", id));
             DataTable dobResult = executor.ExecuteQuery(String.Format("SELECT dob FROM students WHERE id = '{0}'", id));
             DataTable courseResult = executor.ExecuteQuery(String.Format("SELECT course FROM students WHERE id = '{0}'", id));
-
             // Check if the query results are not null
             if (nameBoxResult != null && dobResult != null && courseResult != null)
             {
