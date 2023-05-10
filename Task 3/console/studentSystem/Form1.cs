@@ -44,6 +44,7 @@ namespace studentSystem
                 ListItemData selectedItem = studentListItems[selectedIndex];
 
                 studentInformationListBox.Items.Add("Personal Information");
+                studentInformationListBox.Items.Add(string.Format("ID: {0}", selectedItem.ID));
                 studentInformationListBox.Items.Add(string.Format("Name: {0}", selectedItem.Name));
                 studentInformationListBox.Items.Add(string.Format("Date of Birth: {0}", selectedItem.dob));
                 studentInformationListBox.Items.Add("");
@@ -59,22 +60,25 @@ namespace studentSystem
             studentListItems.Clear();
             foreach (DataRow info in studentInfoQuery.Rows)
             {
-                string[] studentInfo = new string[3];
+                string[] studentInfo = new string[4];
                 int indexer = 0;
                 foreach (DataColumn dataColumn in studentInfoQuery.Columns)
                 {
                     studentInfo[indexer] = info[dataColumn].ToString();
                     indexer++;
                 }
-                ListItemData lid = new ListItemData(studentInfo[0].ToString(), studentInfo[1], studentInfo[2], studentInfo[3]);
-                studentListItems.Add(lid);
-                string itemText = String.Format("Name: {0}, DOB: {1}, Course: {2}", lid.Name, lid.dob, lid.course);
-                studentListBox.Items.Add(itemText);
+                if (studentListBox.Items.Count == 0) //When I remove characters this seems to be out of loop
+                {
+                    studentListBox.Items.Add("No Value Found");
+                } else
+                {
+                    ListItemData lid = new ListItemData(studentInfo[0].ToString(), studentInfo[1], studentInfo[2], studentInfo[3]);
+                    studentListItems.Add(lid);
+                    string itemText = String.Format("Name: {0}, DOB: {1}, Course: {2}", lid.Name, lid.dob, lid.course);
+                    studentListBox.Items.Add(itemText);
+                }
             }
-            if (studentListBox.Items.Count == 0)
-            {
-                studentListBox.Items.Add("No Value Found");
-            }
+
         }
 
         private void populateListBox()

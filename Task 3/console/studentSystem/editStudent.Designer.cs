@@ -67,6 +67,7 @@ namespace studentSystem
             this.submitChages.TabIndex = 3;
             this.submitChages.Text = "Submit";
             this.submitChages.UseVisualStyleBackColor = true;
+            this.submitChages.Click += new System.EventHandler(this.submitChages_Click);
             // 
             // editStudent
             // 
