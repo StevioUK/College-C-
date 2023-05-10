@@ -17,6 +17,7 @@ namespace studentSystem
         MySqlExecutor executor = new MySqlExecutor(connectionString);
         public editStudent(string id)
         {
+            setup();
             InitializeComponent();
             this.id = id;
         }
@@ -33,9 +34,12 @@ namespace studentSystem
 
         private void setup()
         {
-            string command = String.Format("SELECT name FROM students WHERE id = {0};", id);
+            string command = String.Format("SELECT name FROM students WHERE id = '{0}';", id);
             object result = executor.ExecuteQuery(command);
-            nameBox.Text = "YES";
+            if (result != null)
+            {
+                nameBox.Text = result.ToString();
+            }
         }
     }
 }
