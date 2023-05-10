@@ -81,7 +81,7 @@ namespace task_2
         }
 
         public void Reset() {
-            Dictionary<String, String> playlist = new Dictionary<String, String>(); // Create a new empty playlist
+            playlist.Clear(); // Create a new empty playlist
             Console.WriteLine("The playlist is now empty");
         }
 

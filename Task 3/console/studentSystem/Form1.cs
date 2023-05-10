@@ -55,7 +55,7 @@ namespace studentSystem
 
         private void studentNameTextBox_TextChanged(object sender, EventArgs e)
         {
-            DataTable studentInfoQuery = executor.ExecuteQuery(String.Format("SELECT NAME, dob, course FROM students WHERE name LIKE '{0}' OR dob LIKE '{0}' OR course LIKE '{0}';", studentNameTextBox.Text));
+            DataTable studentInfoQuery = executor.ExecuteQuery(String.Format("SELECT ID, NAME, dob, course FROM students WHERE id LIKE '{0}' OR name LIKE '{0}' OR dob LIKE '{0}' OR course LIKE '{0}';", studentNameTextBox.Text));
             studentListBox.Items.Clear();
             studentListItems.Clear();
             if (studentInfoQuery.Rows.Count == 0)
@@ -68,7 +68,6 @@ namespace studentSystem
                     int indexer = 0;
                     foreach (DataColumn dataColumn in studentInfoQuery.Columns)
                     {
-                    
                         studentInfo[indexer] = info[dataColumn].ToString();
                         indexer++;
                     }
@@ -139,8 +138,12 @@ namespace studentSystem
             // Execute a DELETE query to remove the selected student from the database
             executor.ExecuteNonQuery(String.Format("DELETE FROM students WHERE id={0}", selectedItem.ID));
 
+
             // Show a message box indicating successful deletion
             messageBox.messageBox("Successfully deleted", "Success");
+
+            // Delete the entry from the box
+            studentListBox.Items.RemoveAt(selectedIndex);
         }
 
         //This method is called when the editStudentButton is clicked
